@@ -1,97 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script
-     src="https://kit.fotawsome.com/64d58efc2.js"
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawsome.com/ereleases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1m7uH2+nbqUivzIebhndoJK28anvf"
     crossorigin="anonymous"
-    ></script>
-    <title>Ampersand Login</title>
-    <link rel="stylesheet" href="style.css">
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Slider Sign In/Sign Up Form</title>
   </head>
   <body>
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
-             <div class="input-field">
-              <i class="fas fa-user"></i>
-               <input type="text" placeholder="Akan name">
-             </div>
-             <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password">
-        </div>
-        <input type="submit" value="login" class="btn solid">
-        <p class="social-text">Or Sign in with social platforms</p>
-        <div class="social-media">
-            <a href="#" class="social-icon">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-google"></i>
-            </a>
+    <div class="container" id="container">
+      <div class="form-container sighn-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          </form>
-          <form action="" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-               <input type="text" placeholder="Username">
-             </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-               <input type="text" placeholder="Email">
-             </div>
-             <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password">
-        </div>
-        <input type="submit" value="Sign up" class="btn solid">
-        <p class="social-text">Or Sign up with social platforms</p>
-        <div class="social-media">
-            <a href="#" class="social-icon">
-              <img src="https://img.icons8.com/ios/2x/instagram-new--v2.png">
-            </a>
-            <a href="#" class="social-icon">
-              <img src="https://img.icons8.com/ios-filled/2x/twitter.png">
-            </a>
-            <a href="#" class="social-icon">
-              <img src="https://img.icons8.com/ios-filled/2x/google-logo.png">
-            </a>
-            <a href="#" class="social-icon">
-             <img src="https://img.icons8.com/ios-filled/2x/linkedin-circled.png">
-            </a>
-          </div>
-          </form>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name"/>
+          <input type="email" placeholder="Email"/>
+          <input type="password" placeholder="Password"/>
+          <button>Sign up</button>
+        </form>
       </div>
+      <div class="form-container sighn-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="password" placeholder="Password"/>
+          <a href="#">Forget your password</a>
+          <button>Sign In</button>
+        </form>
       </div>
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>New here?</h3>
-            <p>It is Africa month and this means that you get your own Akan name</p>
-            <button class="btn transparent" id="sighn-up-btn">Sign up</button>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connect with us please login with your personal info
+            </p>
+            <button class="ghost" id="signup">Sign Up</button>
           </div>
-          <img src="image1.jpg.svg" >
+        </div class="overlay-panel overlay-right">
+        <div class="overlay-panel overlay-right">
+
         </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>One of us?</h3>
-            <p>It is Africa month and this means that you get your own Akan name!</p>
-            <button class="btn transparent" id="sighn-in-btn">Sign up</button>
-          </div>
-          <img src="image2.jpg.svg" >
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+        </div>
       </div>
     </div>
-    <Script src="main.js"></Script>
+    <script src="main.js"></script>
   </body>
 </html>
